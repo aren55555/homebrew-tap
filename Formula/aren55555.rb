@@ -12,7 +12,7 @@ class Aren55555 < Formula
     (buildpath/"src/github.com/aren55555/aren55555").install buildpath.children
     cd "src/github.com/aren55555/aren55555" do
       system "script/build.bash"
-      bin.install "aren55555" => "aren55555"
+      bin.install "client" => "aren55555"
     end
   end
 end
