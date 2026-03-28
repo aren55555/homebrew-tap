@@ -5,20 +5,20 @@
 class Txtshr < Formula
   desc "Secure, zero-knowledge text sharing CLI"
   homepage "https://github.com/aren55555/txtshr"
-  version "0.3.0"
+  version "0.4.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aren55555/txtshr/releases/download/v0.3.0/txtshr_darwin_amd64.tar.gz"
-      sha256 "6d620cb4bff26a3f6d0b15ee6bd36379f1ed6c9a80ce1ac1f8ced7a16446203c"
+      url "https://github.com/aren55555/txtshr/releases/download/v0.4.0/txtshr_darwin_amd64.tar.gz"
+      sha256 "a69bf1adc34b2cf23dfeca6cc10698478286c714d232fbf41d5ceb90fa12d0e5"
 
       define_method(:install) do
         bin.install "txtshr"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aren55555/txtshr/releases/download/v0.3.0/txtshr_darwin_arm64.tar.gz"
-      sha256 "21313f27b35b00f0bb5e346d747a36167bce2102a6cdb620eaa1aae886163526"
+      url "https://github.com/aren55555/txtshr/releases/download/v0.4.0/txtshr_darwin_arm64.tar.gz"
+      sha256 "c6d0aa29bc39ba6fa922682097a030a7a2c4ecd8038160a7ee4904a70af80e47"
 
       define_method(:install) do
         bin.install "txtshr"
@@ -28,15 +28,15 @@ class Txtshr < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aren55555/txtshr/releases/download/v0.3.0/txtshr_linux_amd64.tar.gz"
-      sha256 "a6786cd3d56dead1da1045c73130c7f92c5629d325c44e198ed419a71ab3f69a"
+      url "https://github.com/aren55555/txtshr/releases/download/v0.4.0/txtshr_linux_amd64.tar.gz"
+      sha256 "4186126c241279f98b87fb97c05e8ca2df2db98f465186b8a625de5fa44715d9"
       define_method(:install) do
         bin.install "txtshr"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aren55555/txtshr/releases/download/v0.3.0/txtshr_linux_arm64.tar.gz"
-      sha256 "07fcafd35a4d9d609e8d578eb962646d848d6b17453eb4f66a83c0d6d1c7c041"
+      url "https://github.com/aren55555/txtshr/releases/download/v0.4.0/txtshr_linux_arm64.tar.gz"
+      sha256 "735b159109d416e627e790cddc46b4c3f94208709f99e69e42085dd8d00cb5cd"
       define_method(:install) do
         bin.install "txtshr"
       end
